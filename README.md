@@ -1,6 +1,6 @@
 # employee-tracker
 
-A Node.js application that presents the user with a main menu where they can pick different things to do from the main menu list. The main menu list gives the user options to interact with a database created with SQL. This application uses MYSQL to interact with the database so that the user can do things such as add information to the database, view information from certain tables, and update information from those tables in the database. 
+A Node.js application that presents the user with a main menu where they can pick different things to do from the main menu list. The main menu list gives the user options to interact with a database created with SQL. This application uses MYSQL2 to interact with the database so that the user can do things such as add information to the database, view information from certain tables, and update information from those tables in the database. 
 
 ## Motivation
 
