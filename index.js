@@ -62,7 +62,7 @@ async function addEmployee() {
 
         async function add() {
             await db.query("INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?,?,?,?);",
-            [`${answers.firstName}`, `${answers.lastName}`, `${answers.role}`, `${answers.manager}`]);
+                [`${answers.firstName}`, `${answers.lastName}`, `${answers.role}`, `${answers.manager}`]);
             return startManager();
         }
         add();
@@ -97,8 +97,8 @@ async function updateEmployee() {
     ]).then((answers) => {
         async function update() {
             await db.query("UPDATE employee SET role_id = ?, manager_id = ? WHERE id = ?;",
-            [`${answers.role}`, `${answers.manager}`, `${answers.employee}`]);
-            
+                [`${answers.role}`, `${answers.manager}`, `${answers.employee}`]);
+
             return startManager();
         }
         update();
@@ -130,7 +130,7 @@ async function addRole() {
     ]).then((answers) => {
         async function roleAdded() {
             await db.query("INSERT INTO role (title, salary, department_id) VALUES (?,?,?);",
-            [`${answers.newRole}`, `${answers.newSalary}`, `${answers.department}`]);
+                [`${answers.newRole}`, `${answers.newSalary}`, `${answers.department}`]);
             return startManager();
         }
         roleAdded();
@@ -148,7 +148,7 @@ async function addDepartment() {
 
     ]).then((answers) => {
         async function departmentAdded() {
-            await db.query("INSERT INTO department (name) VALUES (?);",`${answers.newDepartment}`);
+            await db.query("INSERT INTO department (name) VALUES (?);", `${answers.newDepartment}`);
             return startManager();
         }
         departmentAdded();
