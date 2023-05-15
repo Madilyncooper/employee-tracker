@@ -1,5 +1,5 @@
 INSERT INTO 
-department (d_name) 
+department (name) 
 
 VALUES
 ('HR'),
@@ -8,35 +8,21 @@ VALUES
 ('Warehouse');
 
 INSERT INTO 
-position (title, salary, department_id) 
+role (title, salary, department_id) 
 
 VALUES
-('Head of HR', 150000),
-('Sales Representative/Assistant to the regional manager', 100000),
-('Senior Accountant', 300000),
-('Warehouse Foreman', 60000),
-('Accountant', 150000),
-('Sales Representative', 80000),
-('HR Assistant', 90000),
-('Forklift Operator', 50000);
+('HR Rep', 88000.00, 1),
+('Sales Rep', 98000.00, 2),
+('Accountant', 100000.00, 3),
+('Warehouse Opp.', 50000.00, 4);
 
 INSERT INTO 
-employee (first_name, last_name, manager_id, position_id) 
+employee (first_name, last_name, role_id, manager_id) 
 
 VALUES
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,),
-('', '', ,);
+
+('Jim', 'Halpert', 2, 2),
+('Dwight', 'Shrewt', 2, null),
+('Kelly', 'Kapoor', 1, null),
+('Daryl', 'Philbert', 4, null),
+('Angela', 'Martin', 3, 3);
