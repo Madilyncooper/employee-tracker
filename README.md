@@ -4,7 +4,7 @@ A Node.js application that presents the user with a main menu where they can pic
 
 ## Motivation
 
-Most companies use databases to keep track of all their employee information. Sql is one of the top database languages that companies like to use, but it is too complicated if all employees who want to interact with the database have to be fully knowledgeable about SQL. So, a simple application that allows anyone in the company to interact with the database without having to have any extra education in SQL is the perfect solution. 
+Most companies use databases to keep track of all their employee information. SQL is one of the top database languages that companies like to use, but it is too complicated if all employees who want to interact with the database have to be fully knowledgeable about SQL. So, a simple application that allows anyone in the company to interact with the database without having to have any extra education in SQL is the perfect solution. 
 
 ## Technologies
 
